@@ -1,7 +1,8 @@
 package com.company;
 
 public class BinarySearch {
-    public static final int[] ascendingArray = {2,4,5,17,34,55,86,};
+    public static final int[] ascendingArray = {2,4,5,17,34,55,86};
+    public static final int[] descendingArray = {87,50,49,41,34,11,2};
 
     public static void main(String[] args) {
 
@@ -21,13 +22,35 @@ public class BinarySearch {
     // We will be creating some functions in  order to code the binary search algo.
 
     private int returnMiddleElementIndex(int[] ascendingArray){
-        int midIndex = ascendingArray.length/2;
+        int midIndex = ascendingArray.length/2; // this will throw back some exceptions if the limit exceet the
+        // Integer max or min value. so optimized code will be start + (end-start)/2 Solve it it's basic maths to will
+        // again arrive the same thing which is s+e/2.
         return midIndex;
     }
 
-    private int performBinarySearch(int [] userArray, int target){
+    // find if the given array is sorted in asc or desc order.
+
+    private boolean isAscending(int[] arr){
+        if(arr[0]>arr[arr.length]){
+            return false;
+
+        }else{
+            return true;
+        }
+
+
+    }
+
+
+    private void getBinarySearchTheory(int [] userArray, int target){
         int start = 0;
         int end = ascendingArray.length;
+        boolean isAsc = isAscending(userArray);
+
+        // Binary search also gets affected from the type of sorted array not that much
+        // but some code will change.
+
+        // Use while loop for this. for implementation.
 
         int [] exampleArray = {2,4,5,14,34,55,86,};
 
@@ -38,7 +61,7 @@ public class BinarySearch {
 
         // start = target
         if (start==target){
-            return 0;
+            // return the index.
 
         }else if (midValue>searchTarget){
             // search ----> this side.
