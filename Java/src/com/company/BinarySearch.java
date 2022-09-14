@@ -32,11 +32,22 @@ public class BinarySearch {
 
     private boolean isAscending(int[] arr){
         if(arr[0]>arr[arr.length]){
+            // desc array.
             return false;
 
         }else{
+            // asc array.
             return true;
         }
+
+
+    }
+
+    private void BinarySearch(int[] arr){
+        int start =  arr[0];
+        int midValue = arr[returnMiddleElementIndex(arr)];
+        int end = arr.length;
+        int midIndex = arr.length/2;
 
 
     }
@@ -52,6 +63,8 @@ public class BinarySearch {
 
         // Use while loop for this. for implementation.
 
+        // we also use s+(e+s)/2 for integer range issue when the array gets larger.
+
         int [] exampleArray = {2,4,5,14,34,55,86,};
 
         int midIndex = returnMiddleElementIndex(exampleArray);
@@ -64,11 +77,11 @@ public class BinarySearch {
             // return the index.
 
         }else if (midValue>searchTarget){
-            // search ----> this side.
+            // search <---- this side. left side
 
         }else if(midValue<searchTarget){
 
-            // search <---- this side.
+            // search ----> this side. right side
             // find the middle element for the new array now which is
 
             //After the first loop over array you will arrive at this new array.
