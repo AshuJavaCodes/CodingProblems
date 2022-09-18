@@ -1,6 +1,4 @@
-package com.company;
-
-import java.net.InterfaceAddress;
+package com.redeyesncode;
 
 public class Main {
     int sum;

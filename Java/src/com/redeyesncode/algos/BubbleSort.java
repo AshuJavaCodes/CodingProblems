@@ -1,7 +1,6 @@
-package com.company;
+package com.redeyesncode.algos;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class BubbleSort {
 // https://www.youtube.com/watch?v=Y6Rd9ZQBVG0

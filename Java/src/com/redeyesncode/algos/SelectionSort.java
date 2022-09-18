@@ -1,4 +1,4 @@
-package com.company;
+package com.redeyesncode.algos;
 
 import java.util.Arrays;
 
@@ -27,6 +27,7 @@ public class SelectionSort {
             // index element
             int last = arr.length -i -1; // key point here in selection & bubble sort for the second loop
             // that we use difference is of -1
+            //getMaxIndex contains the second loop.
             int maxIndex = getMaxIndex(arr,0,last);
             swap(arr,maxIndex,last);
 

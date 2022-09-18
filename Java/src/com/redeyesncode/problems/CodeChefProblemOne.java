@@ -1,4 +1,6 @@
-package com.company;
+package com.redeyesncode.problems;
+
+import com.redeyesncode.MyInterface;
 
 import java.util.Scanner;
 
